@@ -1,6 +1,6 @@
 {
   "name": "@ajar/timescript",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple time script",
   "main": "./dist/index.js",
   "type": "module",
@@ -11,8 +11,8 @@
     "coverage": "vitest run --coverage"
   },
   "repository": {
-      "type": "git",
-      "url": "https://github.com/YarivGilad/timescript"
+    "type": "git",
+    "url": "https://github.com/YarivGilad/timescript"
   },
   "keywords": [],
   "license": "ISC",
