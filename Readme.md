@@ -55,36 +55,6 @@ Although there are configuration options to use tsc only for type-checking in ta
     ```
    
 
-### unit tests
-   1. vitest - a lightweight next generation drop-in replacement for jest
+### unit tests and code coverage
+   1. We'll use `vitest` - a lightweight next generation drop-in replacement for jest
 
-### Code coverage
-   1. nyc - a code coverage tool that works well with mocha
-
-### Creating type declarations files
-
-### Linting
-   1. eslint - a pluggable and configurable linter tool for identifying and reporting on patterns in JavaScript
-   2. prettier - an opinionated code formatter
-   3. husky - a tool to prevent bad `git commit`, `git push` and more by using hooks
-   4. lint-staged - a tool to run linters on files that are staged in git
-
-### Documentation   
-    1. typedoc - a documentation generator for typescript projects
-    2. markdown - a lightweight markup language with plain-text-formatting syntax
-    3. github pages - a static site hosting service that takes HTML, CSS, and JavaScript files straight from a repository on GitHub
-
-### Publishing the package
-    1. npm - a package manager for the JavaScript programming language
-    2. github - a provider of Internet hosting for software development and version control using Git
-    3. git - a distributed version-control system for tracking changes in source code during software development
-
-### Versioning
-    1. semver - a semantic versioning specification
-    2. conventional commits - a specification for adding human and machine readable meaning to commit messages
-    3. commitlint - a tool to lint your commit messages
-    4. standard-version - a utility for versioning using semver and CHANGELOG generation powered by conventional commits
-
-### Continuous Integration
-    1. github actions - a CI/CD service that can be used to build, test, and deploy your code
-    2. environment variables - a way to store sensitive information and use them in your CI/CD pipeline
