@@ -27,8 +27,26 @@ jobs:
           yarn test  
           yarn lint  
 
-  publish-npm:
-    needs: ci   # Ensure that the build job is run before this job
+  build:
+    needs: ci # Ensure that the ci job is run before this job
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'yarn'
+      - run: |
+            yarn
+            yarn build
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ts-build
+          path: dist/
+          
+  publish:
+    needs: build  # Ensure that the build job is run before this job
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,10 +55,14 @@ jobs:
           node-version: 20
           cache: 'yarn'
           registry-url: https://registry.npmjs.org/
+
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ts-build
+          path: dist/
+
       - run: |
-          yarn
-          yarn build
           npm publish --access public
         env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-
