@@ -1,5 +1,7 @@
-export { formatDate } from "./date-formatter.js";
-export const msg = "Hello from timescript";
+// ./src/index.ts
+
+export { formatDate } from './date-formatter.js'
+export const msg = 'Hello from timescript'
 // import log from '@ajar/marker';  
 // import { formatDate } from "./date-formatter.js";
 
