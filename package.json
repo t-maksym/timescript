@@ -10,7 +10,7 @@
     "build": "rimraf dist && tsc",
     "test": "vitest",
     "coverage": "vitest run --coverage",
-    "lint": "eslint ./src/**"
+    "lint": "eslint ./src/** --fix"
   },
   "repository": {
     "type": "git",
