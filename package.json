@@ -1,5 +1,5 @@
 {
-  "name": "@ajar/timescript",
+  "name": "@maksym104/timescript",
   "version": "1.1.0",
   "description": "A simple time script",
   "main": "./dist/index.js",
