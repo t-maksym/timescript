@@ -23,20 +23,20 @@ jobs:
               name: 'Checkout repository'
 
             - name: 'Install Dependencies'
-              run: npm ci
+              run: yarn
 
             - name: 'Run tests'
-              run: npm test
+              run: yarn test
 
-    lint:                                     
-        name: 'Run linter'                    
-        runs-on: ubuntu-latest                
-        steps:                                
-            - uses: actions/checkout@v4       
-              name: 'Checkout repository'     
-                                              
-            - name: 'Install Dependencies'    
-              run: npm ci                     
-                                              
-            - name: 'Run linter'              
-              run: npm run lint               
+    lint:
+        name: 'Run linter'
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v4
+              name: 'Checkout repository'
+
+            - name: 'Install Dependencies'
+              run: yarn
+
+            - name: 'Run linter'
+              run: yarn lint
